@@ -14,6 +14,7 @@
 
 // --------------------1) Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
 
+//PSEUDO CODING
 // Name:fibby
 // Input: number greater than 2 (const fibLength1 = 6, const fibLength2 = 10)
 // Output: An array the length of the number input, containing the numbers of the Fibonacci sequence
@@ -85,6 +86,7 @@
 // --------------------2) Create a function that takes in an object and returns an array of the values sorted from least to greatest.
 // Hint: Check out this resource: Object.values() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 
+// PSEUDO CODING
 //Name: sortedArray
 //input: object (const studyMinutesWeek1, const studyMinutesWeek2)
 //output: An array of the values of the object sorted from least to greatest 
@@ -110,35 +112,35 @@
 
 
 
-const studyMinutesWeek1 = {
-  sunday: 90,
-  monday: 30,
-  tuesday: 20,
-  wednesday: 15,
-  thursday: 30,
-  friday: 15,
-  saturday: 60
-}
-// Expected output: [15, 15, 20, 30, 30, 60, 90]
+// const studyMinutesWeek1 = {
+//   sunday: 90,
+//   monday: 30,
+//   tuesday: 20,
+//   wednesday: 15,
+//   thursday: 30,
+//   friday: 15,
+//   saturday: 60
+// }
+// // Expected output: [15, 15, 20, 30, 30, 60, 90]
 
-const studyMinutesWeek2 = {
-  sunday: 100,
-  monday: 10,
-  tuesday: 45,
-  wednesday: 60,
-  thursday: 20,
-  friday: 15,
-  saturday: 65
-}
+// const studyMinutesWeek2 = {
+//   sunday: 100,
+//   monday: 10,
+//   tuesday: 45,
+//   wednesday: 60,
+//   thursday: 20,
+//   friday: 15,
+//   saturday: 65
+// }
 
-// Expected output: [10, 15, 20, 45, 60, 65, 100]
+// // Expected output: [10, 15, 20, 45, 60, 65, 100]
 
-// b) Create the function that makes the test pass.
+// // b) Create the function that makes the test pass.
 
-const sortedArray = (object) => {
-  return Object.values(object).sort((a, b) => a - b 
-  )
-}
+// const sortedArray = (object) => {
+//   return Object.values(object).sort((a, b) => a - b 
+//   )
+// }
 
 
 // console.log(sortedArray(studyMinutesWeek1))
@@ -162,7 +164,7 @@ const sortedArray = (object) => {
 
 // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
-
+// PSEUDO CODING
 //Name: accSum
 //Input: array
 //Output: An array of the accumulating sum. An empty array should return an empty array.
