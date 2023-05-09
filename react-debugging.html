@@ -65,11 +65,12 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,8 +82,18 @@
               )
             })}
           </div>
+         </> 
         )
       }
+
+      //Uncaught SyntaxError: /Inline Babel script: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (44:10) (at credentials.ts:62:21)
+      // FIX 1: Wrap everything inside the return () with an enclosing tag <> </>
+
+      //Uncaught SyntaxError: /Inline Babel script: JSX attributes must only be assigned a non-empty expression. (44:26) (at credentials.ts:62:21)
+      // FIX 2: Add the variable drawCard in the empty {}
+
+      //rning: Invalid event handler property `onclick`. Did you mean `onClick`? at button at App (<anonymous>:19:19)
+      //FIX 3: Capitalize the first 'c' on onClick
 
       // No need to change anything below this line
 
